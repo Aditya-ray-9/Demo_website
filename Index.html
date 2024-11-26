@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: #333;
+            color: #fff;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        .contact {
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        .form-button {
+            margin-top: 20px;
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-button:hover {
+            background: #45a049;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website!</h1>
+    </header>
+    <div class="content">
+        <p>We are thrilled to have you here.</p>
+        <div class="contact">
+            <h3>Contact Information:</h3>
+            <p>Email: info@yourwebsite.com</p>
+            <p>Mobile: +1 234 567 890</p>
+        </div>
+        <button class="form-button" onclick="redirectToForm()">Fill Form</button>
+        <img src="https://source.unsplash.com/random/800x400" alt="Welcome Image">
+    </div>
+    <script>
+        function redirectToForm() {
+            window.location.href = "form.html";
+        }
+    </script>
+</body>
+</html>
